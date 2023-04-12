@@ -11,6 +11,7 @@ const BirdPage = () => {
         textDecoration: "none",
         color: "white",
         border: "2px solid white",
+        
       }}
     >
       <h2 style={{ width: "100%", textAlign: "center" }}>Birds</h2>

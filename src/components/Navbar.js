@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./styleSheets/index.css";
+import "../styleSheets/index.css";
 
 const Navbar = (props) => {
   const searchFilterAnimal = props.animalData.filter((animal) => {

@@ -1,17 +1,16 @@
 import React from "react";
-import Card from "./pages/Card";
-import Search from "./components/Search";
+import Card from "../UI/Card";
+import Search from "../components/Search";
 
-const Animals = (props) => {
-  const searchFilter = props.data.filter((animal) => {
-    return animal.name.includes(props.searchInput);
+const Bird = (props) => {
+  const searchFilter = props.data.filter((bird) => {
+    return bird.name.includes(props.searchInput);
   });
-
   return (
     <div>
-      <h2>Animals {props.data.length}</h2>
+      <h2>Birds {props.data.length}</h2>
       <Search searchHandler={props.searchHandler} />
-      <div className="animal-species-container">
+      <div className="bird-species-container">
         {searchFilter.map((item) => (
           <Card
             key={item.name}
@@ -27,4 +26,4 @@ const Animals = (props) => {
   );
 };
 
-export default Animals;
+export default Bird;

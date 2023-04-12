@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { animals, birds } from "./components/animalsList";
 import "./styleSheets/index.css";
-import Animals from "./pages/Animals";
-import AnimalPage from "./pages/AnimalPage";
-import BirdPage from "./pages/BirdPage";
-import Bird from "./pages/Bird";
+import Animals from "./UI/Animals";
+import AnimalPage from "./UI/AnimalPage";
+import BirdPage from "./UI/BirdPage";
+import Bird from "./UI/Bird";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -13,7 +13,7 @@ class App extends Component {
   state = {
     animals: animals,
     birds: birds,
-    title: "Living world",
+    title: "Animal Likes",
     searchInput: "",
   };
 
