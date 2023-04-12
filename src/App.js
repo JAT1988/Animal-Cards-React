@@ -8,6 +8,7 @@ import BirdPage from "./UI/BirdPage";
 import Bird from "./UI/Bird";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import AboutPage from "./UI/AboutPage";
 
 class App extends Component {
   state = {
@@ -117,6 +118,14 @@ class App extends Component {
                 searchHandler={this.searchHandler}
                 searchInput={this.state.searchInput}
               />
+            }
+          ></Route>
+          <Route
+            path="/about"
+            element={
+              <div className="about-container">
+                <AboutPage></AboutPage>
+              </div>
             }
           ></Route>
         </Routes>
