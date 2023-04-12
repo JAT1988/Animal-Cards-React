@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-family: fantasy;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(0, 0, 0);
+}
+
+header,
+footer,
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+.bird-species-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+.animal-container {
+  display: flex;
+  width: 100%;
+}
+.animal-container :nth-child(1) {
+  width: 50%;
+  height: 400px;
+}
+.animal-container :nth-child(2) {
+  width: 50%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0 24px;
+  font-size: 2rem;
+}
+
+.navbarUl {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbarList {
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
